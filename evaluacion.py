@@ -147,8 +147,8 @@ if submit:
     else:
         st.error("❌ **ALTO RIESGO OPERATIVO:** Respuestas incompatibles con la seguridad vial y el código de ética. Alta probabilidad de negligencia o conductas contraproducentes.")
 
-    # Opción para reiniciar el test
-    if st.form_submit_button("Realizar nueva evaluación"):
+    # Opción para reiniciar el test corregida
+    if st.button("Realizar nueva evaluación"):
         # Limpiamos el estado para generar nuevas preguntas
         del st.session_state.preguntas_seleccionadas
         st.rerun()
