@@ -1,8 +1,3 @@
-Aquí tienes el código completo y listo para copiar y pegar en tu archivo `evaluacion.py`.
-
-Mantiene intacta la lógica de selección aleatoria (elige 30 preguntas de las 50, distribuidas equitativamente entre los 4 rubros) y cuenta con la estructura corregida para que el botón de reinicio funcione perfectamente en Streamlit.
-
-```python
 import streamlit as st
 import time
 import random
@@ -633,5 +628,3 @@ if st.button("🔄 Inicializar Nueva Evaluación (Reset)"):
     if 'preguntas_seleccionadas' in st.session_state:
         del st.session_state.preguntas_seleccionadas
     st.rerun()
-
-```
